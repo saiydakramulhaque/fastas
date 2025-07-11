@@ -1,0 +1,307 @@
+/* font */
+.raleway-normal {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* ========== CSS Variables & Global Styles ========== */
+:root {
+    --primary-color: #504EE4;
+    --text-dark: #1A202C;
+    --text-light: #6A737D;
+    --background-color: #F8F9FE;
+    --highlight-bg: #E9E8FF;
+    --card-bg: #FFFFFF;
+    --star-color: #FFC700;
+    --border-color: #E2E8F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-dark);
+    font-size: 16px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem; /* 56px */
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem; /* 40px */
+    margin-bottom: 50px;
+}
+
+p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: 90px 0;
+    text-align: center;
+}
+
+/* ========== 2. Background Pattern Wrapper ========== */
+.pattern-background {
+    /* This creates the subtle dotted background effect */
+    background-image: url(../Assets/Hero-bg.png);
+    background-repeat: no-repeat;
+}
+
+/* ========== 3. Buttons & Links ========== */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(80, 78, 228, 0.3);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    color: var(--primary-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 0; /* Adjusted for link-style button */
+}
+.btn-secondary:hover {
+    transform: none;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+/* ========== 4. Header ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+/* ========== 5. Hero Section ========== */
+.hero {
+    padding: 80px 0;
+}
+
+/* ========== 6. Action Section ========== */
+.action-section {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    text-align: left;
+    margin: 150px 50px 50px 50px;
+}
+
+.action-text {
+    flex: 1;
+}
+
+.action-text h2 {
+   text-align: left;
+   margin-bottom: 15px;
+}
+
+.action-text p {
+    margin-bottom: 25px;
+    max-width: 400px;
+}
+
+.action-image {
+    flex: 1;
+}
+
+.action-image img {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== 7. Stats Section ========== */
+.stats-wrapper {
+    background-color: var(--highlight-bg);
+    border-radius: 20px;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+/* ========== 8. Testimonials Section ========== */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-card .stars {
+    color: var(--star-color);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-author img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.testimonial-author span {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* ========== 9. CTA (Call To Action) Section ========== */
+.cta h2 {
+    margin-bottom: 25px;
+}
+.cta img {
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== 10. Contact Section ========== */
+.contact {
+    background-color: white; /* White background for this section */
+}
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.contact-info {
+    flex-basis: 40%;
+    text-align: left;
+}
+.contact-info h2 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-form input {
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+.contact-form input::placeholder {
+    color: #999;
+}
+
+.contact-form .btn-primary {
+    width: 100%;
+}
+
+/* ========== 11. Footer ========== */
+footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer .logo {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    margin: 0 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    color: var(--primary-color);
+}
