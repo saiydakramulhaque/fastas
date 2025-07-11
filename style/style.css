@@ -31,7 +31,8 @@
     font-size: 16px;
 }
 .mil{
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
 }
 .container {
     max-width: 1140px;
@@ -170,18 +171,21 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Raleway', sans-serif;
 }
 .stats{
   background-color: var(--highlight-bg);  
   border-radius: 20px;
   text-justify: auto;
   text-size-adjust: 38px;
-  -webkit-text-fill-color: #252432;
+  font-size: 38px bold;
+  font-style: #252432;
 }
 .stat-number {
     font-size: 50px;
     font-weight: 700;
     color: var(--primary-color);
+    font-family: 'Raleway', sans-serif;
 }
 
 .stat-label {
@@ -208,7 +212,7 @@ header {
 
 .testimonial-card .stars {
     color: var(--star-color);
-    font-size: 1.2rem;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
