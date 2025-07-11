@@ -5,7 +5,8 @@
   font-weight: <weight>;
   font-style: normal;
 }
-/* ========== CSS Variables & Global Styles ========== */
+
+/* ========== Share style for full site ========== */
 :root {
     --primary-color: #504EE4;
     --text-dark: #1A202C;
@@ -23,11 +24,14 @@
     box-sizing: border-box;
 }
 
-body {
+.body {
     font-family: 'Raleway', sans-serif;
     background-color: var(--background-color);
     color: var(--text-dark);
     font-size: 16px;
+}
+.mil{
+    font-family: 'Raleway', sans-serif;;
 }
 .container {
     max-width: 1140px;
@@ -167,7 +171,11 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-
+.stats{
+  background-color: var(--highlight-bg);  
+  border-radius: 20px;
+  text-justify: auto;
+}
 .stat-number {
     font-size: 50px;
     font-weight: 700;
@@ -175,7 +183,7 @@ header {
 }
 
 .stat-label {
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--text-light);
     margin-top: 5px;
 }
@@ -307,5 +315,6 @@ footer .logo {
 }
 /* massage */
 .massage{
-    height: 280px;
+    height: 180px;
+    place-items: 1px;
 }
