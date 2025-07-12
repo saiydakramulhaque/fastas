@@ -324,3 +324,9 @@ footer .logo {
     height: 180px;
     place-items: 1px;
 }
+.textce{
+    align-items: center;
+    text-box: 1px;
+    text-align: center;
+    container-type: 1px;
+}
